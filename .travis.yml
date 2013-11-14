@@ -1,0 +1,3 @@
+language: ruby
+script: "bundle exec jekyll build"
+after_success: "bundle exec ls -R _site"

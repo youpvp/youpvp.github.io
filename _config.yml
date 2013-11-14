@@ -1,0 +1,4 @@
+markdown: kramdown
+permalink: /blog/:title
+pygments: true
+relative_permalinks: true
