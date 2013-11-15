@@ -8,7 +8,6 @@ author: Admin
 id: 9b7fa69a-c9d9-47c5-b3d7-d01c3c9feb2f
 ---
 
-### Introduction
 Did you cheer when you found out that ATL 3.0 would support ActiveX control hosting?
 I did. This functionality was at the top of my wish list for ATL. ATL 3.0 has finally
 arrived. What now? In one news group, I saw the following question: "How do I resize
@@ -28,12 +27,12 @@ the scenes is CAxHostWindow.
 CAxHostWindow implements necessary interfaces in order to support the hosting of
 common ActiveX controls (including windowless) and Microsoft Web Browser control.
 In case you do not need to host a Web Browser control, you can define
-`\_ATL_NO_DOCHOSTUIHANDLER` in your project and save about 4K in release dll.
+_ATL_NO_DOCHOSTUIHANDLER in your project and save about 4K in release dll.
 CAxHostWindow derives from CWindowImpl, and this means it needs a window to operate.
 CAxHostWindow can host only one control at a time, and as a result, one CAxHostWindow
 is required for each hosted control. Without going into all the aspects of
 implementation (look into atlhost.h for more details), I would like to concentrate
-here on the way CAxHostWindow handles `WM_SIZE` and `WM_PAINT`.
+here on the way CAxHostWindow handles WM_SIZE and WM_PAINT.
 
 When CAxHostWindow receives WM_SIZE, it checks if the hosted control supports
 IOleObject and sets its new extent. In addition, if the hosted control is a
@@ -112,8 +111,6 @@ window with even less code.
     CreateWindow( TEXT("AtlAxWin"), TEXT("Some.control.1"),
         WS_CHILD | WS_VISIBLE, x, y, cx, cy, hWndParent, NULL, hInst, NULL);
 		
-##### Create a window and the control hosted in it in one call.
-
 Now, we're ready to investigate how Composite Control creates hosted controls.
 Composite Control indirectly derives from CAxDialgImpl. When CaxDialogImpl is
 created, it calls the helper function AtlAxCreateDialog(). This function initializes
@@ -136,16 +133,12 @@ the ActiveX control.
                    87,95,80,14
     END
 
-##### Dialog template created by Visual Studio.
-
 For each ActiveX control found, SplitDialogTemplate() replaces it with record that
 looks like the following below:
 
     CONTROL     "{3343C18D-A997-11D2-B348-00A0244AE119}",IDC_CONTROL,"AtlAxWin",
                 WS_BORDER, 3,3,133,171
             
-##### This is how the control record would look after being processed by SplitDialogTemplate().
-
 As you can see this record look exactly like the record of a normal windows control,
 and it can be created by a standard windows function like
 ::CreateDialogIndirectParam() or ::DialogBoxIndirectParam().
@@ -174,8 +167,6 @@ know the difference!" Let's illustrate it with the following code sample:
         h = GetDlgItem(IDC_PROGRESS1);
         ::SetWindowPos(h, NULL, 3, cy - 21, cx - 6, 18, SWP_NOZORDER);
     }
-
-##### Possible implementation of OnSize( ) in Composite Control.
 
 The implementation of hosting for ActiveX controls in ATL is simple and lightweight,
 but it obviously has limitations. All advantages of windowless controls are

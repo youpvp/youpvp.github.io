@@ -23,17 +23,17 @@ application for Facebook.
 ### Embedding Silverlight into Facebook canvas
 
 I know three ways of embedding Silverlight application into a Facebook
-canvas. <img alt="Fbss" src="http://youpvp.com/blog/image.axd?picture=Fbss_thumb.png" width="260" height="66" /></a>
+canvas.
 
 (1) Select the IFrame option for Render Method in Canvas section of the
 application settings and embed the Silverlight application inside the
 iframed page using standard methods (object tag, silverlight.js, etc.).
-(2) Use <fb:iframe> tag in fbml based canvas. (3) Use fbml tag
-<fb:silverlight>. The <fb:silverlight> tag would be the preferred
+(2) Use `<fb:iframe>` tag in fbml based canvas. (3) Use fbml tag
+`<fb:silverlight>`. The `<fb:silverlight>` tag would be the preferred
 method, but according to the Facebook wiki, the tag is not implemented
 at this time. That leaves only options 1 and 2 available – embed
 Silverlight in iframe. Whether you go with IFrame canvas or use
-<fb:iframe> tag in fbml, the following steps are the same:
+`<fb:iframe>` tag in fbml, the following steps are the same:
 
 ### Extracting parameters passed by Facebook to iframe page
 
@@ -141,7 +141,7 @@ of our current user.
         Facebook.Session.BrowserSession _session = 
             new Facebook.Session.CachedSession(ApiKey, SessionKey, SessionSecret); 
         _session.UserId = UserId;
-        Facebook.Rest.Api \_api = new Facebook.Rest.Api(_session); 
+        Facebook.Rest.Api _api = new Facebook.Rest.Api(_session); 
         _api.Friends.GetAsync(GetFriends, this);
     }
 
