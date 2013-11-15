@@ -65,6 +65,7 @@ that can be exchanged for an access token in a separate step.
 
 In order to detect redirects and pass code to the Silverlight application, following
 steps need to be taken:
+
 1. Create success.html page
 
 {% highlight html %}
@@ -72,7 +73,7 @@ steps need to be taken:
   <head>
    <title>Facebook Login Callback</title>
    <script type="text/javascript">
-      <strong><font color="#800000">window.external.notify(window.location.href);</font></strong>
+      window.external.notify(window.location.href);
    </script>
   </head>
   <body />
