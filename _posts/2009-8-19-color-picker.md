@@ -9,7 +9,7 @@ author: admin
 id: 08041520-f8ef-4890-9f02-af91ff423ff6
 ---
 
-<img alt="colorpickr" src="/i/2009-8-19-color-picker/colorpickr.jpg" />
+<img class="icon" alt="colorpickr" src="/i/2009-8-19-color-picker/colorpickr.jpg" />
 
 I am a bit of a fan of colors and consequently of color pickers. First
 release of Silverlight didn’t provide much help with control development
@@ -31,6 +31,7 @@ experience.
 
 Color picker is free to use in any projects. Have fun.
 
-* <a href="http://youpvp.com/misc/controls/colorpicker">ColorPickr Demo</a>
-* <a href="http://youpvp.com/misc/controls/colorpicker/ColorPicker.zip">Download ColorPicker dll</a>
-* <a href="http://youpvp.com/blog/page/Color-picker-resources.aspx">Color picker resources</a>
+* [ColorPickr Demo](/page/colorpicker.html)
+* [Source on CodePlex](http://colorpickr.codeplex.com)
+* [Nuget package](http://www.nuget.org/List/Packages/ColorPickr)
+* [Color picker resources](/page/color-picker-resources)

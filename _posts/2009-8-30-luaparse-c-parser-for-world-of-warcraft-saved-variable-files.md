@@ -18,4 +18,4 @@ work for me, so I wrote my own. If you need to parse warcraft lua files
 in a .net environment, I hope you will find my LuaParse class to be
 useful.
 
-* <a href="http://youpvp.com/blog/files/luaparse.zip">Download LuaParse source</a>
+* <a href="/files/luaparse.zip">Download LuaParse source</a>
