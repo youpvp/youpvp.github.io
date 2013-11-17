@@ -12,7 +12,7 @@ id: ab17324d-96ab-46f0-9f50-3dc24c12bda3
 I was thinking of some fun ways to use the TipBubble control, aside from the obvious. Here’s an idea, how about
 using TipBubble to style TabControl?
 
-<img alt="TabStyle" src="/i/2010-7-22-fun-with-tipbubble/tabstyle.jpg" width="287" height="55" />
+<img alt="TabStyle" src="/i/2010-7-22-fun-with-tipbubble/tabstyle.jpg" />
 
 Achieving the result you see on the image above is quite simple. Just make a copy of the default TabItem style
 and replace the TemplateTopSelected grid with the code below.

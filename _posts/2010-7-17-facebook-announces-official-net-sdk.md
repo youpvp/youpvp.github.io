@@ -19,6 +19,8 @@ The decisive factor in answering this question for all Silverlight developers is
 Based on the first look, the official SDK is not Silverlight ready, although it should be easy enough to add support for an asynchronous
 communication model.
 
-Also, Facebook SDK is quite similar to [GraphLight](/blog/GraphLight), in that neither provides any help with Facebook authentication.
-All in all, the alpha state of the first official .Net SDK is pretty obvious. For now, I will stick with my own [GraphLight](/blog/GraphLight),
+Also, Facebook SDK is quite similar to [GraphLight](/blog/graphlight-lightweight-facebook-library-for-silverlight), in that neither provides any help with Facebook authentication.
+All in all, the alpha state of the first official .Net SDK is pretty obvious. For now, I will stick with my own library,
 but I will keep an eye on the Facebook SDK to see how its Silverlight support progresses.
+
+**Update:** Official SDK went the way of the dodo together with Facebook Developer Toolkit. The one SDK left standing is: [Facebook SDK for .NET](http://facebooksdk.net)

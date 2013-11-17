@@ -47,8 +47,4 @@ to get a copy of my blog deployed to AppHarbor:
 
 One bit of strange behavior that I noticed was that absolute links would fail to load, due to the requests being made on a port other
 than 80. Apparently this is a <a href="http://support.appharbor.com/kb/getting-started/workaround-for-generating-absolute-urls-without-port-numbe">
-known issue</a> that I’ve fixed by modifying AbsoluteWebRoot property in Utils.cs. *Update*: Link to metaweblog.axd (RsdHandler.cs) 
-needed fixing too.
-
-So far, I am pretty happy with my experience with AppHarbor. It could be some time before I can move my site entirely to AppHarbor,
-but I am willing to give it a try. Meanwhile, check out my blog on AppHarbor <a href="http://ypblog.apphb.com">http://ypblog.apphb.com</a>.
+known issue</a> that I’ve fixed by modifying AbsoluteWebRoot property in Utils.cs.

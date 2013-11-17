@@ -78,8 +78,7 @@ to wait for all asynchronous downloads to finish, and then call the subscriber w
 
 Fair warning: GrahLight is not a fully supported, take-care-of-it-all library. If you like to tinker with your code
 and modify your library to meet your needs, then GraphLight could be for you. I would also recommend looking at
-similar libraries on [CodePlex](http://www.codeplex.com/), for example [Facebook Graph Toolkit](http://facebookgraphtoolkit.codeplex.com)
+similar libraries on [CodePlex](http://www.codeplex.com/), or [Facebook SDK](http://facebooksdk.net)
 
  * [Download GraphLight project](http://dl.dropbox.com/u/3528765/GraphLight.zip)
- * [Comic Composer](http://apps.facebook.com/comiccomposer)
  * [Example of OOB Facebook application](http://dl.dropbox.com/u/3528765/samples/Graph.html)

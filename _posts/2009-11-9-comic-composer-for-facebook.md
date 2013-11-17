@@ -9,7 +9,7 @@ author: admin
 id: bb0b0669-3a91-4bc3-b674-9caaaf6825c6
 ---
 
-If you visited my <a href="http://www.youpvp.com/blog/page/Silverlight-Projects.aspx">projects</a>
+If you visited my <a href="/page/silverlight-projects">projects</a>
 page then you know about silverlight comic builder I am working on.
 <a href="http://apps.facebook.com/comiccomposer">Comic Composer for Facebook</a>
 is the latest development bringing user created comics strips to

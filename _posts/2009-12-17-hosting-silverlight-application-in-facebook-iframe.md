@@ -164,5 +164,5 @@ iframe, and other than minor differences in how parameters are passed
 from web page to the application, the information was still relevant to
 Silverlight.
 
-* <a href="http://wiki.developers.facebook.com/index.php/Authorizing_Applications">Facebook: Authorizing Applications</a>
-* <a href="http://facebooktoolkit.codeplex.com/">Facebook Developer Toolkit</a>
+* <a href="https://developers.facebook.com/docs/facebook-login/">Facebook login documentation</a>
+* <a href="http://facebooksdk.net">Facebook SDK</a>

@@ -2,7 +2,7 @@
 layout: post
 title: What you need to know about DropShadow to create great Silverlight applications
 permalink: /blog/what-you-need-to-know-about-dropshadow
-category: Blog
+category: blog
 date: 2010-07-31 14:42:39
 modified: 2010-07-31 14:42:39
 author: admin

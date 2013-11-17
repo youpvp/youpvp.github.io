@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: “Scratch”, WriteableBitmap Sample
 permalink: /blog/scratch-writeablebitmap-sample
 date: 2009-12-21 17:37:34
@@ -8,7 +8,7 @@ author: admin
 id: d4f8d21a-d16d-46c9-b3bf-35072d8a7ad0
 ---
 
-![Screen](/i/2009-12-21-scratch-writeablebitmap-sample/screen.jpg)
+<img alt="" class="icon" src="/i/2009-12-21-scratch-writeablebitmap-sample/screen.jpg" />
 
 I have a new addition to my samples gallery. This sample was inspired by a question
 I answered on the silverlight.net community forums. The idea of creating a

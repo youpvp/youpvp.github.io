@@ -8,7 +8,7 @@ author: admin
 id: 40b7d78f-0ac1-470f-8c87-27b0b178a38d
 ---
 
-In my previous post about the <a href="/blog/GraphLight-Lightweight-Facebook-library-for-Silverlight.aspx">GraphLight</a> library,
+In my previous post about the <a href="/blog/graphlight-lightweight-facebook-library-for-silverlight">GraphLight</a> library,
 I mentioned that the first step in using the library is to supply it with an access token.
 What I conveniently skimmed over is the explanation of what an access token is and how
 does one get a hold of it. I did this because answering those questions isn’t simple,

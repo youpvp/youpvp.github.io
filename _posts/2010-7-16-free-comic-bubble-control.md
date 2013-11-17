@@ -9,7 +9,7 @@ author: admin
 id: cdc35cde-2023-4d2e-afab-0064fba9ab88
 ---
 
-<img alt="free" src="/i/free-comic-bubble-control/free.jpg" width="151" height="244" />
+<img alt="free" class="icon" src="/i/free-comic-bubble-control/free.jpg" width="151" height="244" />
 
 I’ve been working on my Silverlight Comic Creator application for a pretty long time now. One of the more
 difficult tasks was creating speech bubble control that is customizable, easy to use and one that looks like
