@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    line-height: 1.35em;
+    font-family: "PT Serif", Georgia, serif;
+}
+article {
+    margin: 0 46px;
+}
+footer > div { margin: 0 46px; }
+
+ol, ul {
+    padding: 0 0 0 1.7em;
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.25em;
+    font-weight: 400;
+}
+h2 {
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.1em;
+}
+h3 {
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+code {
+    font-family: Consolas, Menlo, "Courier New", monospace;
+}
+
+footer {
+    background-color: #eee;
+    font-size: 0.9em;
+    margin-top: 50px;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer section {
+    display: inline-block;
+    margin: 10px 20px;
+    vertical-align: top;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 1.1em;
+    }
+    article {
+        width: 880px;
+        margin: 0 auto;
+    }
+    footer > div {
+        width: 880px;
+        margin: 0 auto;
+    }
+}

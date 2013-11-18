@@ -34,8 +34,8 @@ Implementing a desktop authentication flow in accordance with Facebook documenta
 is quite straightforward:
 
 1. Create WebBrowser control in code or in XAML
-2. Navigate to <em><a href="https://graph.facebook.com/oauth/authorize">https://graph.facebook.com/oauth/authorize</a>…</em>
-3. Intercept the redirect to login_succes.html using LoadCompleted event and read the
+2. Navigate to *https://graph.facebook.com/oauth/authorize…*
+3. Intercept the redirect to login_succes.html using `LoadCompleted` event and read the
    access token out of the URL
 
 ### Problem #1
@@ -53,7 +53,7 @@ worth it.
 
 Using the <a href="http://msdn.microsoft.com/en-us/library/system.windows.controls.webbrowser.loadcompleted(VS.95).aspx">LoadCompleted</a>
 event to intercept the redirect to login_succes.html doesn’t work because the Uri property
-of NavigationEventArgs is always null. If one is unable to read the access token out of
+of `NavigationEventArgs` is always null. If one is unable to read the access token out of
 the URL, using the <a href="http://developers.facebook.com/docs/authentication/desktop">Desktop Application Authentication</a>
 process is no longer an option.
 
@@ -67,7 +67,6 @@ In order to detect redirects and pass code to the Silverlight application, follo
 steps need to be taken:
 
 1. Create success.html page
-
 {% highlight html %}
 <html>
   <head>
@@ -87,7 +86,6 @@ Both conditions are <i>required</i> for authentication process to work.
 3. Point *redirect_uri* parameter to the location of the success page
 
 4. Add ScriptNotify handler to WebBrowser control:
-
 {% highlight c# %}
 browser.ScriptNotify += (a, b) =>
 {
