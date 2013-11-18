@@ -67,6 +67,7 @@ mouse-processing up to the programmer by providing only the WM_MOUSEMOVE message
 However, in ATL's defense, I shall say it inherited this shortcoming from Windows.
 
 > Java and DHTML each have full support for mouse tracking. 
+>
 > * Java implements: mouseEnter, mouseExit, mouseMove and mouseDrag.
 > * DHTML supports events: onmouseover, onmousemove, onmouseout.
 

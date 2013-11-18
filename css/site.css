@@ -9,7 +9,8 @@ article {
 footer > div { margin: 0 46px; }
 
 ol, ul {
-    padding: 0 0 0 1.7em;
+    padding: 0;
+    list-style-position: inside;
 }
 
 h1 {
@@ -25,7 +26,7 @@ h2 {
 }
 h3 {
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: normal;
 }
 code {
@@ -57,4 +58,15 @@ footer section {
         width: 880px;
         margin: 0 auto;
     }
+}
+
+@media only screen and (max-device-width: 480px) {
+    article {
+        margin: 0 20px;
+    }
+    footer > div { margin: 0 20px; }
+    h1 {
+        font-size: 1.8em;
+    }
+    img { max-width: 440px; }
 }

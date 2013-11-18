@@ -68,17 +68,17 @@ steps need to be taken:
 
 1. Create success.html page
 
-		{% highlight html %}
-		<html>
-		  <head>
-		   <title>Facebook Login Callback</title>
-		   <script type="text/javascript">
-		      window.external.notify(window.location.href);
-		   </script>
-		  </head>
-		  <body />
-		</html>
-		{% endhighlight %}
+	{% highlight html %}
+	<html>
+	  <head>
+	   <title>Facebook Login Callback</title>
+	   <script type="text/javascript">
+	      window.external.notify(window.location.href);
+	   </script>
+	  </head>
+	  <body />
+	</html>
+	{% endhighlight %}
 
 2. Success page should be hosted on the same domain as the application and its url
 should start with _Connect URL_ (see <a href="http://wiki.developers.facebook.com/index.php/Creating_a_Platform_Application">Facebook connect settings</a>).
@@ -88,32 +88,32 @@ Both conditions are <i>required</i> for authentication process to work.
 
 4. Add ScriptNotify handler to WebBrowser control:
 
-		{% highlight c# %}
-		browser.ScriptNotify += (a, b) =>
-		{
-		    int n = b.Value.IndexOf("?code=");
-		    if (n > 0)
-		    {
-		        //extract code from b.Value
-		        //exchange code for access token as described in Facebook documentation
-		        WebClient wc = new WebClient();
-		        wc.DownloadStringAsync(new Uri(
-		             string.Format(token_xchange, app_id, redirect_url, secret, code)));
-		        wc.DownloadStringCompleted += (c, d) =>
-		        {
-		            //extract access token from d.Result
-		            LoginSuccess(access_token);
-		        };
-		    }
-		    else
-		    {
-		        if (b.Value.IndexOf("user_denied") > 0)
-		        {
-		            LoginFailed();
-		        }
-		    }
-		};
-		{% endhighlight %}
+	{% highlight c# %}
+	browser.ScriptNotify += (a, b) =>
+	{
+	    int n = b.Value.IndexOf("?code=");
+	    if (n > 0)
+	    {
+	        //extract code from b.Value
+	        //exchange code for access token as described in Facebook documentation
+	        WebClient wc = new WebClient();
+	        wc.DownloadStringAsync(new Uri(
+	             string.Format(token_xchange, app_id, redirect_url, secret, code)));
+	        wc.DownloadStringCompleted += (c, d) =>
+	        {
+	            //extract access token from d.Result
+	            LoginSuccess(access_token);
+	        };
+	    }
+	    else
+	    {
+	        if (b.Value.IndexOf("user_denied") > 0)
+	        {
+	            LoginFailed();
+	        }
+	    }
+	};
+	{% endhighlight %}
 
 At last a bit of good news: The method described above actually works, but…
 
@@ -136,7 +136,7 @@ undocumented features and looks kind of “hacky,” so I am not going to
 present it here.
 </aside>
 
-### Postmortem
+## Postmortem
 
 Implementing Facebook authentication in an OOB silverlight application
 turned out to be a challenge. Most of the issues I encountered were related
@@ -146,7 +146,7 @@ It would be nice to see Microsoft considering use cases for Silverlight
 applications needing to login to OAuth based services (Facebook, Twitter,
 Flicker…).
 
-### Bonus feature: Logout or “What goes up must come down“
+## Bonus feature: Logout or “What goes up must come down“
 
 After all the trouble with authentication, it would be nice if logging out
 was simple… and it mostly is. Presently the only way to properly log a user
