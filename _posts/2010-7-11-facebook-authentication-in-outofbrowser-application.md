@@ -67,17 +67,18 @@ In order to detect redirects and pass code to the Silverlight application, follo
 steps need to be taken:
 
 1. Create success.html page
-{% highlight html %}
-<html>
-  <head>
-   <title>Facebook Login Callback</title>
-   <script type="text/javascript">
-      window.external.notify(window.location.href);
-   </script>
-  </head>
-  <body />
-</html>
-{% endhighlight %}
+
+		{% highlight html %}
+		<html>
+		  <head>
+		   <title>Facebook Login Callback</title>
+		   <script type="text/javascript">
+		      window.external.notify(window.location.href);
+		   </script>
+		  </head>
+		  <body />
+		</html>
+		{% endhighlight %}
 
 2. Success page should be hosted on the same domain as the application and its url
 should start with _Connect URL_ (see <a href="http://wiki.developers.facebook.com/index.php/Creating_a_Platform_Application">Facebook connect settings</a>).
@@ -86,32 +87,33 @@ Both conditions are <i>required</i> for authentication process to work.
 3. Point *redirect_uri* parameter to the location of the success page
 
 4. Add ScriptNotify handler to WebBrowser control:
-{% highlight c# %}
-browser.ScriptNotify += (a, b) =>
-{
-    int n = b.Value.IndexOf("?code=");
-    if (n > 0)
-    {
-        //extract code from b.Value
-        //exchange code for access token as described in Facebook documentation
-        WebClient wc = new WebClient();
-        wc.DownloadStringAsync(new Uri(
-             string.Format(token_xchange, app_id, redirect_url, secret, code)));
-        wc.DownloadStringCompleted += (c, d) =>
-        {
-            //extract access token from d.Result
-            LoginSuccess(access_token);
-        };
-    }
-    else
-    {
-        if (b.Value.IndexOf("user_denied") > 0)
-        {
-            LoginFailed();
-        }
-    }
-};
-{% endhighlight %}
+
+		{% highlight c# %}
+		browser.ScriptNotify += (a, b) =>
+		{
+		    int n = b.Value.IndexOf("?code=");
+		    if (n > 0)
+		    {
+		        //extract code from b.Value
+		        //exchange code for access token as described in Facebook documentation
+		        WebClient wc = new WebClient();
+		        wc.DownloadStringAsync(new Uri(
+		             string.Format(token_xchange, app_id, redirect_url, secret, code)));
+		        wc.DownloadStringCompleted += (c, d) =>
+		        {
+		            //extract access token from d.Result
+		            LoginSuccess(access_token);
+		        };
+		    }
+		    else
+		    {
+		        if (b.Value.IndexOf("user_denied") > 0)
+		        {
+		            LoginFailed();
+		        }
+		    }
+		};
+		{% endhighlight %}
 
 At last a bit of good news: The method described above actually works, but…
 

@@ -21,9 +21,12 @@ h2 {
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.3em;
     line-height: 1.1em;
+    margin-top: 1.5em;
 }
 h3 {
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
 }
 code {
     font-family: Consolas, Menlo, "Courier New", monospace;
@@ -32,7 +35,7 @@ code {
 footer {
     background-color: #eee;
     font-size: 0.9em;
-    margin-top: 50px;
+    margin-top: 120px;
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 

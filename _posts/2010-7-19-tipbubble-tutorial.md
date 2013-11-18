@@ -18,21 +18,21 @@ Below is a quick overview of TipBubble properties.
 
 TipSide property controls on which side of the bubble to show the tip. It can be set to Bottom, Top, Left or Right.
 
-<img alt="example of TipSide property" src="/i/2010-7-19-tipbubble-tutorial/tipside.png" width="532" height="47" />
+<img alt="example of TipSide property" src="/i/2010-7-19-tipbubble-tutorial/tipside.png" />
 
 ### TipPosition
 
 TipPosition property controls positioning of the tip on the side of a bubble. It accepts values in the 0 to 1 range,
 with 0 corresponding to top or left, 0.5 center, and 1 right or bottom.
 
-<img alt="example of TipPosition" src="/i/2010-7-19-tipbubble-tutorial/tipposition.png" width="358" height="46" />
+<img alt="example of TipPosition" src="/i/2010-7-19-tipbubble-tutorial/tipposition.png" />
 
 ### TipSize
 
 TipSize property allows you to change the size of the tip. Since the tip is made from an equilateral triangle,
 TipSize is the size of all of its sides.
 
-<img alt="TipSize example" src="/i/2010-7-19-tipbubble-tutorial/tipsize.png" width="101" height="93" />
+<img alt="TipSize example" src="/i/2010-7-19-tipbubble-tutorial/tipsize.png" />
 
 ### TipFill
 
@@ -51,7 +51,7 @@ All common control properties behave in the same way as you would expect for all
 
 ### Basic TipBubble
 
-<img alt="simple bubble" src="/i/2010-7-19-tipbubble-tutorial/basic.png" width="188" height="66" />
+<img alt="simple bubble" src="/i/2010-7-19-tipbubble-tutorial/basic.png" />
 
 {% highlight xml %}
     <tip:TipBubble Background="#FF7FBC65" 
@@ -73,7 +73,7 @@ All common control properties behave in the same way as you would expect for all
 
 ### TipBubbble With Complex Content
 
-<img alt="bubble with complex content" src="/i/2010-7-19-tipbubble-tutorial/withblur.png" width="207" height="58" />
+<img alt="bubble with complex content" src="/i/2010-7-19-tipbubble-tutorial/withblur.png" />
 
 {% highlight xml %}
     <tip:TipBubble Background="#FF7FBC65"
@@ -153,4 +153,4 @@ Styled ToolTip
     </Grid>
 {% endhighlight %}
 
-<img alt="heart" src="/i/2010-7-19-tipbubble-tutorial/heart.png" width="37" height="33" />
+<img alt="heart" src="/i/2010-7-19-tipbubble-tutorial/heart.png" />
