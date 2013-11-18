@@ -28,6 +28,9 @@ h3 {
     font-size: 1.1em;
     font-weight: normal;
 }
+.archive h1 {
+    font-size: 1.3em;
+}
 code {
     font-family: Consolas, Menlo, "Courier New", monospace;
 }
@@ -62,10 +65,12 @@ footer section {
 @media only screen and (max-width: 480px) {
     article {
         margin: 0 20px;
+        word-wrap: break-word;
     }
     footer > div { margin: 0 20px; }
     h1 {
         font-size: 1.8em;
     }
-    img { max-width: 440px; }
+    img { max-width: 100%; margin: 10px auto; }
+    pre { max-width: 100%; overflow: scroll; }
 }

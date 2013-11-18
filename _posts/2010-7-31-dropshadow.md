@@ -23,7 +23,7 @@ it executes in two passes. The first pass blurs the image horizontally, while se
 a vertical blur. This is called separable blur, and it saves a significant amount of computation in exchange
 for using extra memory and fill rate.
 
-<img alt="blur breakdown" src="/i/2010-7-31-dropshadow/blur.jpg" width="420" height="475" />
+<img alt="blur breakdown" src="/i/2010-7-31-dropshadow/blur.jpg" width="420" />
 
 The cost of separable blur with radius N (N tap filter) can be estimated as:
 2 writes + 2 * N reads + 2 * N multiplies + 2 * (N – 1) additions per pixel. So, applying 9 tap blur effect
@@ -37,7 +37,7 @@ effect by rendering the element into a memory bitmap. Then an alpha mask is sepa
 using the exact same two-pass method I described for blur. Finally, the bitmap and the blurred alpha mask combined
 to create an element with drop shadow.
 
-<img alt="shadow breakdown" src="/i/2010-7-31-dropshadow/shadow.jpg" width="583" height="431" />
+<img alt="shadow breakdown" src="/i/2010-7-31-dropshadow/shadow.jpg" width="583" />
 
 Because DropShadow uses a blur filter, it will suffer the same performance problems as the Blur effect. Furthermore,
 DropShadow uses even more memory and more fill rate, making it very taxing on both the CPU and memory bandwidth.
