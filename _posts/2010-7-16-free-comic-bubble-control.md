@@ -26,7 +26,7 @@ You can add comic bubble to your Silverlight application in a few easy steps:
 
 3. Add custom namespace to the top parent control
 
-	    <UserControl x:Class="BubblesApp.MainPage"
+	   <UserControl x:Class="BubblesApp.MainPage"
 	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	        xmlns:bubbles="clr-namespace:FreeBubbles;assembly=FreeBubbles"

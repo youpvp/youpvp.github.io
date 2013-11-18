@@ -9,8 +9,7 @@ article {
 footer > div { margin: 0 46px; }
 
 ol, ul {
-    padding: 0;
-    list-style-position: inside;
+    padding: 0 0 0 1.5em;
 }
 
 h1 {
@@ -60,7 +59,7 @@ footer section {
     }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
     article {
         margin: 0 20px;
     }
