@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hosting BlogEngine blog on AppHarbor
+title: Hosting BlogEngine  blog on  AppHarbor
 category: blog
 date: 2011-06-21 21:28:45
 author: admin
