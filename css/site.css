@@ -2,6 +2,7 @@ body {
     margin: 0;
     line-height: 1.35em;
     font-family: "PT Serif", Georgia, serif;
+    font-size: 1em;
 }
 article {
     margin: 0 46px;
@@ -38,7 +39,7 @@ code {
 footer {
     background-color: #eee;
     font-size: 0.9em;
-    margin-top: 120px;
+    margin-top: 100px;
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
